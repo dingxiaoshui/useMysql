@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/1.css"/>
+    <title>用户注册</title>
+</head>
+<body>
+<form action="commit/" method="post">
+    <fieldset style="font-size: 10px">
+        <header style="width: 100%;height: 30px;">
+            <img src="../img/User.jpg" width="21px" height="21px"
+                 alt="" style="float: left"/>
+            <span style="float: left">服务器名称</span>
+        </header>
+        <table>
+            <tr>
+                <td align="right">服务器名称：</td>
+                <td>
+                    <input type="text" name="server" autofocus/>
+
+                </td>
+
+
+            </tr>
+                <td align="right">操作：</td>
+                <td>
+                    <select name="opera" id="papers" style="width: 170px    ">
+                        <option value="0">管理</option>
+                        <option value="1">远程链接</option>
+                        <option value="2">续费</option>
+                        <option value="3">升级</option>
+                        <option value="4">更多</option>
+                    </select><span style="color: red">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">IP地址：</td>
+                <td>
+                    <input type="text" name="ip"/>
+                    <span style="color: red">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">配置：</td>
+                <td>
+                    <input type="text" name="config"/>
+                    <span style="color: red">*</span>
+                </td>
+            </tr>
+            </tr>
+                <td align="right">状态：</td>
+                <td>
+                    <select name="status" id="papers" style="width: 170px    ">
+                        <option value="0">在线</option>
+                        <option value="1">下线</option>
+                        <option value="2">未知</option>
+                        <option value="3">故障</option>
+                        <option value="4">备用</option>
+                    </select><span style="color: red">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="reset" style="float: right;background-color: gainsboro" /></td>
+                <td colspan="2"><input type="submit" value="注册"style="background-color: red"/></td>
+            </tr>
+        </table>
+
+    </fieldset>
+</form>
+</body>
+</html>
