@@ -1,0 +1,18 @@
+
+{% if error %}
+    <p style="color: red;">Please submit a search term.</p>
+{% endif %}
+{% if server %}
+
+
+    <ul>
+        <li>{{ server.id }}</li>
+         <li>{{ server.name }}</li>
+     <p>{{ server.ip }}</p>
+     <p>{{ server.config }}</p>
+     <p>{{ server.opera }}</p>
+     <p>{{ server.status }}</p>
+    </ul>
+{% else %}
+    <p>No books matched your search criteria.</p>
+{% endif %}

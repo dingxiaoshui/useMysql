@@ -24,6 +24,10 @@ urlpatterns = [
     url(r'^$',view.index),
     url(r'^commit/',view.commit),
     url(r'^email_post/',view.email_post),
+    #url(r'^search/',view.search),
+    url(r'^search_form/',view.search),
+    #url(r'^log/',view.log),
+    url(r'^contact/',view.contact),
 ]
 
 

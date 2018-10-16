@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import ServerList,Email
 
-# Register your models here.
+admin.site.register(ServerList)
+admin.site.register(Email)
